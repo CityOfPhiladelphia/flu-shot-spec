@@ -28,6 +28,6 @@
 
 ##Using / Contributing
 
-This proposed specification is intended for use by governments, non-profits and other health care providers. Comments, questions, etc may be registered by subitting a new issue.
+This proposed specification is intended for use by governments, non-profits and other health care providers. Comments, questions, etc may be registered by subitting a new [issue](issues).
 
 To submit a proposed change, fork this repo and submit a pull request.
