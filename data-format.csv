@@ -20,7 +20,7 @@ end_time,time,Yes,The local time at which vaccinations begin being dispensed at 
 eligibility,string,Yes,Limitations on eligibility for vaccinations at a specific location.
 documents,string,No,List of any documents or documentation that might be needed to receive vaccination. Use the pipe (‘|’) delimiter to separate document names if multiple documents are required.
 cost,decimal,Yes,The cost for vaccinations at a specified location (if any).
-currency code,string,No,Currency code for the cost of vacations. Required if cost applies. (ISO 4217 format)
+currency_code,string,No,Currency code for the cost of vacations. Required if cost applies. (ISO 4217 format)
 notes,string,No,Any other relevant information relating to the dispensing of vaccinations at a specific location.
 file_start_date,date,No,The file provides complete and reliable schedule information for vaccinations in the period from the beginning of the file_start_date day to the end of the file_end_date day.
 file_end_date,date,No,The file provides complete and reliable schedule information for vaccinations in the period from the beginning of the file_start_date day to the end of the file_end_date day.
