@@ -1,6 +1,12 @@
 ## Utilities for working with flu shot data
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/VTvBpGTDJ00/0.jpg)](http://www.youtube.com/watch?v=VTvBpGTDJ00)
+A simple import script to populate a MySQL database with flu shot location data.
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=VTvBpGTDJ00
+" target="_blank"><img src="http://img.youtube.com/vi/VTvBpGTDJ00/0.jpg" 
+alt="Video tutorial on using fu shot data" width="240" height="180" border="10" /></a>
+
+## Sample SQL query
 
 <pre>
 SELECT facility_name, facility_type, street1, latitude, longitude, eligibility, cost, currency_code FROM locations 
