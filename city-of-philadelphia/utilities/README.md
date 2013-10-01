@@ -2,11 +2,8 @@
 
 A simple import script to populate a MySQL database with flu shot location data.
 
-<center>
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=VTvBpGTDJ00
-" target="_blank"><img src="http://img.youtube.com/vi/VTvBpGTDJ00/0.jpg" 
-alt="Video tutorial on using fu shot data" width="240" height="180" border="10" /></a>
-</center>
+[![Video](https://raw.github.com/CityOfPhiladelphia/flu-shot-spec/master/city-of-philadelphia/utilities/you-tube.png)](http://www.youtube.com/watch?v=VTvBpGTDJ00)
+
 
 ## Sample SQL query
 
