@@ -1,6 +1,6 @@
 ## Utilities for working with flu shot data
 
-A simple import script to populate a MySQL database with flu shot location data. Watch this short video for an overview on how to use it.
+A simple [import script](https://github.com/CityOfPhiladelphia/flu-shot-spec/blob/master/city-of-philadelphia/utilities/import.sql) to populate a MySQL database with flu shot location data. Watch this short video for an overview on how to use it.
 
 [![Video](https://raw.github.com/CityOfPhiladelphia/flu-shot-spec/master/city-of-philadelphia/utilities/you-tube.png)](http://www.youtube.com/watch?v=VTvBpGTDJ00)
 
