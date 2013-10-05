@@ -33,8 +33,7 @@ CSV.foreach( ARGV.first ) do |row|
   # todo: there's got to be a cleaner way to do this
   properties = {}
   row.each_with_index do |field, index|
-    next if field.nil?
-    properties[ keys[index] ] = field
+    properties[ keys[index] ] = field unless field.nil?
   end
 
   # add an icon for good measure
@@ -57,4 +56,5 @@ CSV.foreach( ARGV.first ) do |row|
 
 end
 
+# output to stdout
 puts JSON.pretty_generate geojson
