@@ -45,7 +45,7 @@ CSV.foreach( ARGV.first ) do |row|
     "geometry" => {
       "type" => "Point",
       "coordinates" => [
-        properties["latitude"], properties["longitude"]
+        properties["longitude"], properties["latitude"]
       ],
     },
     "properties" => properties
