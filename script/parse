@@ -1,0 +1,60 @@
+#!/usr/bin/env ruby
+# Ruby Script to convert FluSV to geoJSON
+# Usage: `script/parse path-to-file.csv > data.geojson`
+# Outputs geojson to stdout for use on GitHub (or elsewhere)
+
+require 'csv'
+require 'json'
+
+# init global geojson object
+geojson = {
+  "type" => "FeatureCollection",
+  "features" => []
+}
+
+keys = []
+
+if ARGV.empty?
+  puts "Usage: script/parse path-to-data.csv"
+  exit 1
+end
+
+CSV.foreach( ARGV.first ) do |row|
+
+  # build an array of keys from the table header
+  # and skip the first row
+  if keys == []
+    keys = row
+    next
+  end
+
+  # build an object of each row's properties
+  # inter-splice the keys we figured out on the first pass
+  # todo: there's got to be a cleaner way to do this
+  properties = {}
+  row.each_with_index do |field, index|
+    properties[ keys[index] ] = field unless field.nil?
+  end
+
+  # add an icon for good measure
+  properties["marker-symbol"] = "hospital"
+
+  # create feature object
+  feature = {
+    "type" => "Feature",
+    "geometry" => {
+      "type" => "Point",
+      "coordinates" => [
+        properties["longitude"], properties["latitude"]
+      ],
+    },
+    "properties" => properties
+  }
+
+  # Add feature to feature collection
+  geojson["features"].push feature
+
+end
+
+# output to stdout
+puts JSON.pretty_generate geojson
