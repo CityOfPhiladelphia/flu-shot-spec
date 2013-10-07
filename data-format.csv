@@ -16,7 +16,7 @@ url,string,No,A website providing additional information about the business or e
 begin_date,date,Yes,The date on which vaccinations begin at a specified location. (ISO 8601 format)
 end_date,date,Yes,The date on which vaccinations end at a specified location. (ISO 8601 format)
 begin_time,time,Yes,The local time at which vaccinations begin being dispensed at a specified location. (ISO 8601 format)
-end_time,time,Yes,The local time at which vaccinations begin being dispensed at a specified location. (ISO 8601 format)
+end_time,time,Yes,The local time at which vaccinations finish being dispensed at a specified location. (ISO 8601 format)
 eligibility,string,Yes,Limitations on eligibility for vaccinations at a specific location.
 documents,string,No,List of any documents or documentation that might be needed to receive vaccination. Use the pipe (‘|’) delimiter to separate document names if multiple documents are required.
 cost,decimal,Yes,The cost for vaccinations at a specified location (if any).
