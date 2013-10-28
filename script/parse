@@ -3,6 +3,7 @@
 # Usage: `script/parse path-to-file.csv > data.geojson`
 # Outputs geojson to stdout for use on GitHub (or elsewhere)
 
+require 'rubygems'
 require 'csv'
 require 'json'
 
@@ -37,7 +38,7 @@ CSV.foreach( ARGV.first ) do |row|
   end
 
   # add an icon for good measure
-  properties["marker-symbol"] = "hospital"
+  properties["marker_symbol"] = "hospital"
 
   # create feature object
   feature = {
