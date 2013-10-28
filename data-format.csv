@@ -1,6 +1,7 @@
 Name,Type,Required,Description
 facility_name,string,Yes,The name of the facility providing flu vaccinations.
-facility_id,number,Yes,The unique identifier for the facility providing flu vaccinations.
+facility_id,string,Yes,The unique identifier for the facility providing flu vaccinations.
+data_source, string, Yes,The name of the source of the data on flu shor locations. (i.e., a public health department)
 facility_type,string,No,Denotes the type of facility providing flu vaccinations.
 street1,string,Yes,The street address of the facility providing flu vaccinations.
 street2,string,Yes,Supplementary street address information of the facility providing flu vaccinations.
