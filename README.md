@@ -26,6 +26,12 @@
 * Facilities that are open for periods that include non-contiguous date ranges should use multiple records for the same facility, with the appropriate date ranges reflected in begin_date and end_date for each time period.
 * Facilities that are open for periods that include non-contiguous time ranges on the same day should use multiple records for the same facility, with the appropriate time ranges reflected in begin_time and end_time for each time period.
 
+##Cities that are using this spec
+
+* [Philadelphia](https://github.com/CityOfPhiladelphia/flu-shot-spec)
+* [Chicago](https://data.cityofchicago.org/developers/docs/flu-shot-clinic-locations-2013)
+* [San Francisco](https://data.sfgov.org/Public-Health/San-Francisco-Department-of-Public-Health-Flu-Shot/yg87-cd6v)
+
 ##Using / Contributing
 
 This proposed specification is intended for use by governments, non-profits and other health care providers. Comments, questions, etc may be registered by subitting a new [issue](../../issues).
