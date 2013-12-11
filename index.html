@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Flu Shot Location Data Specification</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/bootstrap-philagov.css">
+    <style>
+        body {
+          padding-top:60px;
+        }
+        .container-narrow {
+            margin: 0 auto;
+            max-width: 700px;
+        }
+        .container-narrow > hr {
+            margin: 30px 0;
+        }
+        .map {
+          text-align: center;
+        }
+
+    </style>
+</head>
+  <body>
+
+<div class="navbar navbar-fixed-top">
+        <div class="navbar-inner philagov">
+            <div class="container-narrow">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#"><img src="img/cityLogo-31px.png" alt="City Seal"></a>
+                <span class="hidden-phone"><a class="brand" href="#"><img src="img/cityLogoMark-145-30.png" alt="City Logo"></a></span>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a title="City Homepage" href="http://www.phila.gov"><i class="icon-home icon-white"></i></a></li>
+                        <li><a title="Topics" href="http://www.phila.gov/Topics">Topics</a></li>
+                        <li><a title="Business" href="http://www.phila.gov/Business">Business</a></li>
+                        <li><a title="Residents" href="http://www.phila.gov/residents">Residents</a></li>
+                        <li><a title="Visitors" href="http://www.phila.gov/visitors">Visitors</a></li>
+                        <li><a title="Government" href="http://www.phila.gov/agencies">Government</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-narrow">
+      <div class="page-header"><h1>Flu Shot Location Data</h1></div>
+
+      <h3>Overview</h3>
+      <p>With a goal of making data on the availability of flu shots more discoverable and more usable, the City of Philadelphia is leading an effort to create a standard specification for flu shot location data that can be used by any municipality. This will help encourage wider dissemination of this data and use in third-party website and applications.</p>
+
+      <div class="map">
+      <script src="https://embed.github.com/view/geojson/CityOfPhiladelphia/flu-shot-spec/master/city-of-philadelphia/locations.geojson?height=380&width=700"></script>
+      <div class="well well-small">A map showing flu locations in Philadelphia. Source data can be found <a href="https://github.com/CityOfPhiladelphia/flu-shot-spec/tree/master/city-of-philadelphia">here</a>.</div>
+      </div>
+
+      <p>Making it quick and easy to find a location that dispenses flu vaccinations is an ideal problem for a civic application to help solve. Information on flu shot locations and schedules can be easily displayed via a web site, mobile app, or even via SMS, and can be easily integrated into a personal calendar or reminder app.Data on where flu vaccinations are dispensed are typically compiled - albeit in differing formats and data structures - by local public health officials. By developing a standard format for this data, officials can encourage the integration of this information into maps and <a href="https://github.com/tkompare/flushots2013">civic applications</a>.</p>
+
+      <h3>Current Status</h3>
+      <p>A draft specification is being developed jointly by the cities of Philadelphia, Chicago, San Francisco and New York. The latest version of the draft can be found <a href="https://github.com/CityOfPhiladelphia/flu-shot-spec">on GitHub</a>.</p>     
+
+      <h3>Participating Cities</h3>
+      <ul>
+        <li><a href="https://github.com/CityOfPhiladelphia/flu-shot-spec/tree/master/city-of-philadelphia">Philadelphia</a></li>
+        <li><a href="https://data.sfgov.org/Public-Health/San-Francisco-Department-of-Public-Health-Flu-Shot/yg87-cd6v">San Francisco</a></li>
+        <li><a href="https://data.cityofchicago.org/developers/docs/flu-shot-clinic-locations-2013">Chicago</a></li>
+        <li>New York City (Coming soon)</li>
+      </ul>
+
+      <h3>Get Involved</h3>
+      <p>To participate in the development of this specification, simply fork the <a href="https://github.com/CityOfPhiladelphia/flu-shot-spec">existing GitHub repo</a> and submit a pull request. Or, open a new issue on the repo <a href="https://github.com/CityOfPhiladelphia/flu-shot-spec/issues">here</a>. </p> 
+
+
+ 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
