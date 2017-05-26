@@ -31,6 +31,7 @@
 * [Philadelphia](https://github.com/CityOfPhiladelphia/flu-shot-spec)
 * [Chicago](https://data.cityofchicago.org/developers/docs/flu-shot-clinic-locations-2013)
 * [San Francisco](https://data.sfgov.org/Public-Health/San-Francisco-Department-of-Public-Health-Flu-Shot/yg87-cd6v)
+* [Long Beach, Calif.](https://www.google.com/fusiontables/DataSource?docid=1n5PNdxLZu9-neTWzfpnpGknTv3rntZ99IMUPpiM)
 
 ## Using / Contributing
 
